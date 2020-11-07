@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apptr">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".InfoActivity"
+            android:parentActivityName=".profile"
+            android:theme="@style/AppThemeActionBar2"
+            android:screenOrientation = "portrait">
+
+        </activity>
+        <activity
+            android:name=".profile_info"
+            android:parentActivityName=".profile"
+            android:theme="@style/AppThemeActionBar2"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".profile"
+            android:screenOrientation = "portrait"/>
+        <activity
+            android:name=".splash_screen"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signup_activity"
+            android:screenOrientation = "portrait"/>
+        <activity
+            android:name=".calculadora_mitjana"
+            android:label="@string/title_activity_tabbed"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".EditarTasca"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".NovaTasca"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".Tasques"
+            android:screenOrientation = "portrait"/>
+        <activity android:name=".agenda"
+            android:screenOrientation = "portrait"/>
+
+        <activity android:name=".login_activity"
+            android:screenOrientation = "portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
